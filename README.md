@@ -23,7 +23,10 @@ O projeto é composto por três classes principais:
 
 A blockchain é iniciada com a criação do "bloco gênesis", que é o primeiro bloco da cadeia. Este bloco tem um hash anterior definido como `0`, pois não há blocos anteriores.
 
+
+```java
 chain.add(createGenesisBlock());
+````
 
 ### 2. Adição de Novos Blocos
 
@@ -49,6 +52,7 @@ A função isChainValid() percorre todos os blocos da blockchain e verifica se:
 O hash de cada bloco é válido.
 O hash anterior de cada bloco corresponde ao hash do bloco anterior.
 
+```java
 public boolean isChainValid() {
     for (int i = 1; i < chain.size(); i++) {
         // Verifica se o hash atual corresponde ao hash calculado
@@ -62,40 +66,48 @@ public boolean isChainValid() {
     }
     return true;
 }
+````
 
 Estrutura dos Blocos
 
 Cada bloco contém os seguintes elementos:
 
-Hash: Um identificador único gerado pelo algoritmo SHA-256.
-Hash Anterior: O hash do bloco anterior na cadeia.
-Dados: Informações transacionais (ou qualquer outro tipo de dado).
-Timestamp: Data e hora em que o bloco foi criado.
+**Hash**: Um identificador único gerado pelo algoritmo SHA-256.
+**Hash Anterior**: O hash do bloco anterior na cadeia.
+**Dados**: Informações transacionais (ou qualquer outro tipo de dado).
+**Timestamp**: Data e hora em que o bloco foi criado.
 
 Exemplo de criação de bloco:
 
+```java
 public Block(String data, String previousHash) {
     this.data = data;
     this.previousHash = previousHash;
     this.timeStamp = LocalDateTime.now();
     this.hash = calculateHash(); // Calcula o hash baseado nos dados
 }
+````
 
 Como Executar
 
 Clonar o repositório:
 
+```java
 git clone https://github.com/seu-usuario/seu-repositorio.git
-
 cd seu-repositorio
+````
 
 Compilar o projeto: Compile os arquivos Java utilizando sua IDE ou a linha de comando:
 
+```java
 javac blockchain/*.java
+````
 
 Executar a aplicação: Execute o arquivo Main.java para testar a blockchain:
 
+```java
 java blockchain.Main
+````
 
 Você verá a blockchain sendo impressa no console, com os hashes e dados de cada bloco.
 
