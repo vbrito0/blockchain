@@ -1,23 +1,29 @@
-Blockchain em Java
+# Blockchain em Java
+
 Este é um projeto simples de blockchain implementado em Java para fins educacionais. Ele demonstra como uma blockchain funciona, com funcionalidades como adicionar blocos, verificar a integridade da cadeia e calcular hashes para garantir a imutabilidade dos dados.
 
-Funcionalidades
-Criação de uma Blockchain: Implementa uma blockchain básica com blocos encadeados.
-Adição de novos blocos: Blocos podem ser adicionados contendo dados transacionais.
-Validação da cadeia: Verifica se a blockchain é válida, garantindo que os hashes de cada bloco estejam corretos.
-Cálculo de Hash: Utiliza o algoritmo SHA-256 para gerar um hash único para cada bloco.
-Estrutura do Projeto
+## Funcionalidades
+
+- **Criação de uma Blockchain**: Implementa uma blockchain básica com blocos encadeados.
+- **Adição de novos blocos**: Blocos podem ser adicionados contendo dados transacionais.
+- **Validação da cadeia**: Verifica se a blockchain é válida, garantindo que os hashes de cada bloco estejam corretos.
+- **Cálculo de Hash**: Utiliza o algoritmo SHA-256 para gerar um hash único para cada bloco.
+
+## Estrutura do Projeto
+
 O projeto é composto por três classes principais:
 
-Main.java: Ponto de entrada da aplicação. Aqui você cria a blockchain e testa suas funcionalidades.
-Blockchain.java: Implementa a lógica da blockchain, incluindo a adição de blocos e a verificação da validade da cadeia.
-Block.java: Representa um bloco individual na cadeia, armazenando informações como hash, hash anterior, dados e timestamp.
-Como Funciona
-1. Criação da Blockchain
-A blockchain é iniciada com a criação do "bloco gênesis", que é o primeiro bloco da cadeia. Este bloco tem um hash anterior definido como 0, pois não há blocos anteriores.
+- `Main.java`: Ponto de entrada da aplicação. Aqui você cria a blockchain e testa suas funcionalidades.
+- `Blockchain.java`: Implementa a lógica da blockchain, incluindo a adição de blocos e a verificação da validade da cadeia.
+- `Block.java`: Representa um bloco individual na cadeia, armazenando informações como hash, hash anterior, dados e timestamp.
 
-java
-Copy code
+## Como Funciona
+
+### 1. Criação da Blockchain
+
+A blockchain é iniciada com a criação do "bloco gênesis", que é o primeiro bloco da cadeia. Este bloco tem um hash anterior definido como `0`, pois não há blocos anteriores.
+
+```java
 chain.add(createGenesisBlock());
 2. Adição de Novos Blocos
 Você pode adicionar blocos à blockchain passando dados (como transações). Cada novo bloco tem um hash único, que é calculado com base em seus dados e no hash do bloco anterior.
@@ -62,7 +68,6 @@ Hash Anterior: O hash do bloco anterior na cadeia.
 Dados: Informações transacionais (ou qualquer outro tipo de dado).
 Timestamp: Data e hora em que o bloco foi criado.
 Exemplo de criação de bloco:
-
 java
 Copy code
 public Block(String data, String previousHash) {
@@ -73,18 +78,15 @@ public Block(String data, String previousHash) {
 }
 Como Executar
 Clonar o repositório:
-
 bash
 Copy code
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 Compilar o projeto: Compile os arquivos Java utilizando sua IDE ou a linha de comando:
-
 bash
 Copy code
 javac blockchain/*.java
 Executar a aplicação: Execute o arquivo Main.java para testar a blockchain:
-
 bash
 Copy code
 java blockchain.Main
@@ -115,3 +117,8 @@ Timestamp: 2024-09-14T14:06:05.789
 A blockchain é válida? true
 Licença
 Este projeto é de código aberto e está licenciado sob a MIT License.
+
+perl
+Copy code
+
+Este formato está pronto para ser utilizado como um arquivo `README.md` no GitHub, oferecendo uma estrutura clara e informativa sobre o projeto de blockchain em Java.
