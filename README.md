@@ -118,23 +118,24 @@ yaml
 Copy code
 Blockchain:
 -------------------
-Hash: a3b1c3...
-Hash Anterior: 0
-Dados: Bloco Gênesis
-Timestamp: 2024-09-14T14:05:55.123
+- Hash: a3b1c3...
+- Hash Anterior: 0
+- Dados: Bloco Gênesis
+- Timestamp: 2024-09-14T14:05:55.123
 
 -------------------
-Hash: 8f2a1e...
-Hash Anterior: a3b1c3...
-Dados: Transação 1: Victor pagou 10 moedas para João
-Timestamp: 2024-09-14T14:06:00.456
+- Hash: 8f2a1e...
+- Hash Anterior: a3b1c3...
+- Dados: Transação 1: Victor pagou 10 moedas para João
+- Timestamp: 2024-09-14T14:06:00.456
 
 -------------------
-Hash: 7d2f7b...
-Hash Anterior: 8f2a1e...
-Dados: Transação 2: João pagou 5 moedas para Maria
-Timestamp: 2024-09-14T14:06:05.789
+- Hash: 7d2f7b...
+- Hash Anterior: 8f2a1e...
+- Dados: Transação 2: João pagou 5 moedas para Maria
+- Timestamp: 2024-09-14T14:06:05.789
 
+-------------------
 A blockchain é válida? true
 
 ### Licença
