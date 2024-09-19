@@ -32,7 +32,9 @@ chain.add(createGenesisBlock());
 
 Você pode adicionar blocos à blockchain passando dados (como transações). Cada novo bloco tem um hash único, que é calculado com base em seus dados e no hash do bloco anterior.
 
+```java
 blockchain.addBlock("Transação 1: Victor pagou 10 moedas para João");
+````
 
 ### 3. Cálculo de Hash
 
@@ -68,7 +70,7 @@ public boolean isChainValid() {
 }
 ````
 
-Estrutura dos Blocos
+### Estrutura dos Blocos
 
 Cada bloco contém os seguintes elementos:
 
@@ -88,22 +90,22 @@ public Block(String data, String previousHash) {
 }
 ````
 
-Como Executar
+### Como Executar
 
-Clonar o repositório:
+**Clonar o repositório**:
 
 ```java
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 ````
 
-Compilar o projeto: Compile os arquivos Java utilizando sua IDE ou a linha de comando:
+**Compilar o projeto: Compile os arquivos Java utilizando sua IDE ou a linha de comando**:
 
 ```java
 javac blockchain/*.java
 ````
 
-Executar a aplicação: Execute o arquivo Main.java para testar a blockchain:
+**Executar a aplicação: Execute o arquivo Main.java para testar a blockchain**:
 
 ```java
 java blockchain.Main
@@ -135,10 +137,8 @@ Timestamp: 2024-09-14T14:06:05.789
 
 A blockchain é válida? true
 
-Licença
+### Licença
 
 Este projeto é de código aberto e está licenciado sob a MIT License.
-
-perl
 
 Este formato está pronto para ser utilizado como um arquivo `README.md` no GitHub, oferecendo uma estrutura clara e informativa sobre o projeto de blockchain em Java.
