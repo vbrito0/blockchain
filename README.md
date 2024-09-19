@@ -40,6 +40,7 @@ public String calculateHash() {
     String input = previousHash.concat(timeStamp.toString()).concat(data);
     return applySha256(input);
 }
+````
 
 ### 4. Verificação da Blockchain
 
