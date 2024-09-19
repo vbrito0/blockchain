@@ -35,6 +35,7 @@ blockchain.addBlock("Transação 1: Victor pagou 10 moedas para João");
 
 O hash de cada bloco é gerado usando o algoritmo SHA-256. O hash é um valor criptográfico único que depende dos dados do bloco e do hash do bloco anterior. Isso garante que, se qualquer dado for alterado, o hash também será, tornando a cadeia imutável.
 
+```java```
 public String calculateHash() {
     String input = previousHash.concat(timeStamp.toString()).concat(data);
     return applySha256(input);
